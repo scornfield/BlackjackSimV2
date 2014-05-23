@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.PlayingCards.Library
 {
-    public class Deck : CardCollection
+    public class Deck : PlayingCardCollection
     {
         public Deck() : base() { }
 
@@ -18,15 +18,15 @@ namespace Cornfield.CardGame.Library
             {
                 int k = rng.Next(n);
                 --n;
-                ICard temp = this[n];
+                IPlayingCard temp = this[n];
                 this[n] = this[k];
                 this[k] = temp;
             }
         }
 
-        public ICard Pop()
+        public IPlayingCard Pop()
         {
-            ICard tmp = this[0];
+            IPlayingCard tmp = this[0];
             this.RemoveAt(0);
             return tmp;
         }
@@ -40,7 +40,7 @@ namespace Cornfield.CardGame.Library
             {
                 foreach (CardSuit suit in suits)
                 {
-                    this.Add(new Card(rank, suit));
+                    this.Add(new PlayingCard(rank, suit));
                 }
             }
         }

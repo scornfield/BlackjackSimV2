@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.PlayingCards.Library
 {
-    public interface ICard
+    public interface IPlayingCard
     {
         CardRank Rank { get; }
         CardSuit Suit { get; }

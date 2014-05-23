@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D058B4A6-D8D5-482C-A2D9-5AD6A8C40987}</ProjectGuid>
+    <ProjectGuid>{8C2B0898-2F7F-4EEE-BD1D-13AC3327D317}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cornfield.CardGame.Library</RootNamespace>
-    <AssemblyName>Cornfield.CardGame.Library</AssemblyName>
+    <RootNamespace>Cornfield.Utility.Library</RootNamespace>
+    <AssemblyName>Cornfield.Utility.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,15 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Card.cs" />
-    <Compile Include="CardCollection.cs" />
-    <Compile Include="CardRank.cs" />
-    <Compile Include="CardRanks.cs" />
-    <Compile Include="CardSuit.cs" />
-    <Compile Include="CardSuits.cs" />
-    <Compile Include="Deck.cs" />
     <Compile Include="EquatableBase.cs" />
-    <Compile Include="Interfaces\ICard.cs" />
     <Compile Include="Interfaces\INameAbbreviationPair.cs" />
     <Compile Include="NameAbbreviationPair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

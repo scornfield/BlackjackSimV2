@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.PlayingCards.Library
 {
     public static class CardSuits
     {

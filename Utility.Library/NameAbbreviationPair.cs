@@ -1,7 +1,11 @@
 ﻿using System;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.Utility.Library
 {
+    /// <summary>
+    /// This is a utility class that gives an object a name and abbreviation.  
+    /// These properties are then used to determine when two objects are equal utilizing the EquatableBase class.
+    /// </summary>
     public class NameAbbreviationPair : EquatableBase<NameAbbreviationPair>, INameAbbreviationPair, IEquatable<NameAbbreviationPair>
     {
         public string Abbrev { get; protected set; }

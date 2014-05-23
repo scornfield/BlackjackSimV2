@@ -6,7 +6,7 @@
     <ProjectGuid>{55B28B69-6BFF-4450-8690-4E78B28AC2CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Cornfield.CardGame.Library.Test</RootNamespace>
+    <RootNamespace>Cornfield.PlayingCards.Library.Test</RootNamespace>
     <AssemblyName>Cornfield.CardGame.Library.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -51,14 +52,20 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CardRanksTests.cs" />
-    <Compile Include="NameAbbreviationPairTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="EquatableBaseTests.cs" />
+    <Compile Include="CardSuitsTests.cs" />
+    <Compile Include="PlayingCardCollectionTests.cs" />
+    <Compile Include="PlayingCardTests.cs" />
+    <Compile Include="DeckTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CardGame.Library\CardGame.Library.csproj">
+    <ProjectReference Include="..\CardGame.Library\PlayingCards.Library.csproj">
       <Project>{d058b4a6-d8d5-482c-a2d9-5ad6a8c40987}</Project>
-      <Name>CardGame.Library</Name>
+      <Name>PlayingCards.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility.Library\Utility.Library.csproj">
+      <Project>{8c2b0898-2f7f-4eee-bd1d-13ac3327d317}</Project>
+      <Name>Utility.Library</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

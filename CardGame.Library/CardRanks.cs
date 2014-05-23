@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.PlayingCards.Library
 {
-    public class CardRanks
+    /// <summary>
+    /// This static class contains each of the card ranks that is used in a standard card game.
+    /// </summary>
+    public static class CardRanks
     {
         private static ReadOnlyCollection<CardRank> _cardList = null;
 

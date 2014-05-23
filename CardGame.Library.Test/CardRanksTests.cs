@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Cornfield.CardGame.Library.Test
+namespace Cornfield.PlayingCards.Library.Test
 {
     [TestClass]
     public class CardRanksTests
@@ -9,6 +9,7 @@ namespace Cornfield.CardGame.Library.Test
         [TestMethod]
         public void CardRanks_AllCardsInitiatlized()
         {
+            // Verify that each of our CardRanks are initialized correctly
             Assert.AreEqual(CardRanks.Ace, new CardRank("A", "Ace"));
             Assert.AreEqual(CardRanks.Two, new CardRank("2", "Two"));
             Assert.AreEqual(CardRanks.Three, new CardRank("3", "Three"));
@@ -22,6 +23,28 @@ namespace Cornfield.CardGame.Library.Test
             Assert.AreEqual(CardRanks.Jack, new CardRank("J", "Jack"));
             Assert.AreEqual(CardRanks.Queen, new CardRank("Q", "Queen"));
             Assert.AreEqual(CardRanks.King, new CardRank("K", "King"));
+        }
+
+        [TestMethod]
+        public void CardRanks_CardListInitialized()
+        {
+            // Verify that each of our expected cards is in the CardRanks list
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Ace));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Two));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Three));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Four));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Five));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Six));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Seven));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Eight));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Nine));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Ten));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Jack));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.Queen));
+            Assert.IsTrue(CardRanks.getAllCards().Contains(CardRanks.King));
+
+            // Check the number of cards to make sure there's nothing extra in the list
+            Assert.AreEqual(13, CardRanks.getAllCards().Count);
         }
     }
 }

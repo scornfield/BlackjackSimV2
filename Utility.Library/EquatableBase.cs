@@ -1,7 +1,11 @@
 ﻿using System;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.Utility.Library
 {
+    /// <summary>
+    /// This abstract class is a utility that provides base code for equality comparisons of custom types
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public abstract class EquatableBase<T> : IEquatable<T> where T : EquatableBase<T>, IEquatable<T>
     {
         public abstract bool Equals(T other);

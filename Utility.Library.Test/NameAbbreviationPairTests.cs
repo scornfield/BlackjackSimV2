@@ -3,11 +3,8 @@ using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Cornfield.CardGame.Library.Test
+namespace Cornfield.Utility.Library.Test
 {
-    /// <summary>
-    /// Summary description for NameAbbreviationPairTests
-    /// </summary>
     [TestClass]
     public class NameAbbreviationPairTests
     {
@@ -45,6 +42,18 @@ namespace Cornfield.CardGame.Library.Test
             Assert.IsFalse(new NameAbbreviationPair("S", "Steven").Equals(new NameAbbreviationPair("X", "Steven")));
             Assert.IsFalse(new NameAbbreviationPair("S", "Steven").Equals(null));
             Assert.IsFalse(new NameAbbreviationPair("S", "Steven").Equals(4));
+        }
+
+        [TestMethod]
+        public void EquatableBase_ToStringReturnsAbbrevTest()
+        {
+            Assert.IsTrue(new NameAbbreviationPair("S", "Steven").ToString() == "S");
+        }
+
+        [TestMethod]
+        public void EquatableBase_HashCodesEqualTest()
+        {
+            Assert.IsTrue(new NameAbbreviationPair("S", "Steven").GetHashCode() == new NameAbbreviationPair("S", "Steven").GetHashCode());
         }
 
     }

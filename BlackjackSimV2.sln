@@ -14,9 +14,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentat
 		Documentation\Architecture Diagram.vsd = Documentation\Architecture Diagram.vsd
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame.Library", "CardGame.Library\CardGame.Library.csproj", "{D058B4A6-D8D5-482C-A2D9-5AD6A8C40987}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingCards.Library", "CardGame.Library\PlayingCards.Library.csproj", "{D058B4A6-D8D5-482C-A2D9-5AD6A8C40987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame.Library.Test", "CardGame.Library.Test\CardGame.Library.Test.csproj", "{55B28B69-6BFF-4450-8690-4E78B28AC2CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingCards.Library.Test", "CardGame.Library.Test\PlayingCards.Library.Test.csproj", "{55B28B69-6BFF-4450-8690-4E78B28AC2CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility.Library", "Utility.Library\Utility.Library.csproj", "{8C2B0898-2F7F-4EEE-BD1D-13AC3327D317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility.Library.Test", "Utility.Library.Test\Utility.Library.Test.csproj", "{177FE546-703F-4C0E-97F2-CD2C43580F7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +40,14 @@ Global
 		{55B28B69-6BFF-4450-8690-4E78B28AC2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B28B69-6BFF-4450-8690-4E78B28AC2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B28B69-6BFF-4450-8690-4E78B28AC2CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2B0898-2F7F-4EEE-BD1D-13AC3327D317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2B0898-2F7F-4EEE-BD1D-13AC3327D317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2B0898-2F7F-4EEE-BD1D-13AC3327D317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2B0898-2F7F-4EEE-BD1D-13AC3327D317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177FE546-703F-4C0E-97F2-CD2C43580F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177FE546-703F-4C0E-97F2-CD2C43580F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177FE546-703F-4C0E-97F2-CD2C43580F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177FE546-703F-4C0E-97F2-CD2C43580F7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

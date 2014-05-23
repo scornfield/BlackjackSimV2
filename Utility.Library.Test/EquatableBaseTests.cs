@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Cornfield.CardGame.Library.Test
+namespace Cornfield.Utility.Library.Test
 {
     [TestClass]
     public class EquatableBaseTests
@@ -52,6 +52,12 @@ namespace Cornfield.CardGame.Library.Test
             Assert.IsTrue(new TestEquatableObj(2) != new TestEquatableObj(1));
             Assert.IsTrue(new TestEquatableObj(1) != null);
             Assert.IsTrue(null != new TestEquatableObj(1));
+        }
+
+        [TestMethod]
+        public void EquatableBase_HashCodesEqualTest()
+        {
+            Assert.IsTrue(new TestEquatableObj(1).GetHashCode() == new TestEquatableObj(1).GetHashCode());
         }
     }
 }

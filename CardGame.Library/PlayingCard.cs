@@ -1,13 +1,14 @@
 ﻿using System;
+using Cornfield.Utility.Library;
 
-namespace Cornfield.CardGame.Library
+namespace Cornfield.PlayingCards.Library
 {
-    public class Card : EquatableBase<Card>, ICard, IEquatable<Card>
+    public class PlayingCard : EquatableBase<PlayingCard>, IPlayingCard, IEquatable<PlayingCard>
     {
         public CardRank Rank { get; protected set; }
         public CardSuit Suit { get; protected set; }
 
-        public Card(CardRank rank, CardSuit suit)
+        public PlayingCard(CardRank rank, CardSuit suit)
         {
             Rank = rank;
             Suit = suit;
@@ -18,7 +19,7 @@ namespace Cornfield.CardGame.Library
             return string.Format("{0}{1}", Rank, Suit);
         }
 
-        public override bool Equals(Card other)
+        public override bool Equals(PlayingCard other)
         {
             if (other == null)
                 return false;
