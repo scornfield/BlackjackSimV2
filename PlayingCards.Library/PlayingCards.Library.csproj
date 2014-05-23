@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Cornfield.PlayingCards.Library</RootNamespace>
-    <AssemblyName>Cornfield.CardGame.Library</AssemblyName>
+    <AssemblyName>Cornfield.PlayingCards.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
